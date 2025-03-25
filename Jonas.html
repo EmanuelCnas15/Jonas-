@@ -2,8 +2,99 @@
 <html>
 <head>
     <title>Barbearia Lisboa</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #dbb187;
+        }
+        div{
+            background-color: rgb(237, 223, 205);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #dbb187;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+        display: block;
+        text-align: center;
+        }
+        span{
+            display: inline-block;
+            font-size: 2.5em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+            margin: -8px;
+            text-shadow: 0px 100px 90px #ccc
+        }
+        .content > span:nth-child(1) { /* L */
+            transform: translateX(-10px) translateY(30px) rotate(-20deg);
+        }
+
+        .content > span:nth-child(2) { /* I */
+            transform: translateX(-5px) translateY(18px) rotate(-12deg);
+        }
+
+        .content > span:nth-child(3) { /* S */
+            transform: translateX(-3px) translateY(10px) rotate(-6deg);
+        }
+
+        .content > span:nth-child(4) { /* B */
+            transform: translateX(0px) translateY(5px) rotate(0deg);
+        }
+
+        .content > span:nth-child(5) { /* O */
+            transform: translateX(3px) translateY(10px) rotate(6deg);
+        }
+
+        .content > span:nth-child(6) { /* A */
+            transform: translateX(8px) translateY(26px) rotate(15deg);
+        }
+
+    </style>
 </head>
 <body>
-
+    <span class="content">
+        <span class="n_1">L</span>
+        <span class="n_2">I</span>
+        <span class="n_3">S</span>
+        <span class="n_4">B</span>
+        <span class="n_5">O</span>
+        <span class="n_6">A</span><br><br><br>
+        <span class="sombra"></span><br>
+        <span class="loading"></span> 
+    </span>
+<div class="123" >
+    <H1>LOGIN</H1>
+    <input type="text" placeholder="email">
+    <br><br>
+    <input type="password" placeholder="password">
+    <br><br>
+    <button>ENTRAR</button>
+</div>
 </body>
 </html>
